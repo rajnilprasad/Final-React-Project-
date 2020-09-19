@@ -1,28 +1,22 @@
 // Functional component
 import React from "react";
 import RoomFilter from "./RoomFilter";
-import RoomsList from "./RoomList";
-import { RoomConsumer } from "../context";
+import RoomList from "./RoomList";
+import { withRoomConsumer } from "../context";
 import Loading from "./Loading";
 
-export default function RoomContainer() {
+function RoomContainer({ context }) {
+    const { loading, sortedRooms, rooms } = context;
+    if (loading) {
+      return <Loading />;
+    }
     return (
-        <RoomConsumer>
-            {/* function to access the value that we are passing in context.js (this.context) */}
-            {value => {
-                const { loading, sortedRooms, rooms } = value
-                if ( loading ) {
-                    return <Loading />
-                }
-                return (
-                    <div>
-                        Search Rooms
-                        <RoomFilter rooms={rooms} />
-                        <RoomsList rooms={sortedRooms} />
-                    </div>
-                );
-            }}
-        </RoomConsumer>
+      <>
+        <RoomFilter rooms={rooms} />
+        <RoomList rooms={sortedRooms} />
+      </>
     );
-}
+  }
+  
+  export default withRoomConsumer(RoomContainer);
 

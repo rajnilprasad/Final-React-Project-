@@ -8,22 +8,22 @@ export default class Services extends Component {
             {
                 icon: <FaCocktail />,
                 title: "Free Cocktails",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                info: "Every evening, hotels has free tastings at their hotel bar, where you can sample local wines, beers and spirits at no cost. Some Canopy hotels keep the free taps flowing for as long 6 hours, from 3pm – 9pm"
             },
             {
                 icon: <FaHiking />,
                 title: "Endless Hiking",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                info: "The resort is hub to many hiking paths with access to nearby alpine lakes, mountain biking trails, river"
             },
             {
                 icon: <FaShuttleVan />,
                 title: "Free Shuttle",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                info: "The Free Broadway Shuttle offers fast connections from BART, San Francisco Bay Ferry, Amtrak, Amtrak San Joaquins and Capitol Corridor to downtown"
             },
             {
                 icon: <FaBeer />,
                 title: "Strongest Beer",
-                info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                info: "The offer includes two local beers delivered to your hotel room; a flight of Vermont craft brews at the Tavern (pictured); and a free map showing"
             }
 
         ]
