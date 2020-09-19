@@ -9,7 +9,7 @@ class RoomProvider extends Component {
   state = {
     rooms: [],
     sortedRooms: [],
-    featuredRooms: [],
+    feturedRooms: [],
     loading: true,
     type: "all",
     capacity: 1,
